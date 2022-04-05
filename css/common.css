@@ -1,7 +1,74 @@
 @charset "utf-8";
 
+/* 웹폰트 */
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.font-Fredoka {
+    font-family: 'Fredoka One', cursive;
+}
+
+.font-AggroB {
+    font-family: 'SBAggroB';
+}
+
+.font-AggroM {
+    font-family: 'SBAggroM';
+}
+
+.font-SpoqaR {
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.font-SpoqaB {
+    font-family: 'SpoqaHanSansNeo-Bold';
+}
+
+.font-size-body {
+    font-size: 14px;
+}
+
+.font-size-header1 {
+    font-size: 30px;
+}
+
+.font-size-header2 {
+    font-size: 20px;
+}
+
 /* 테블릿: 767px 이상*/
-@media all and (min-width:767px) {}
+@media all and (min-width:767px) {
+    .font-size-body {
+        font-size: 16px;
+    }
+
+    .font-size-header1 {
+        font-size: 36px;
+    }
+}
 
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px) {}
