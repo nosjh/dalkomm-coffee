@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/* 테블릿: 767px 이상*/
+@media all and (min-width:767px) {}
+
+/* pc: 1024px 이상 */
+@media all and (min-width:1024px) {}
