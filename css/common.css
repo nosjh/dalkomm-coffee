@@ -2,6 +2,12 @@
 
 /* 웹폰트 */
 @font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'SBAggroM';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
     font-weight: normal;
@@ -10,6 +16,12 @@
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,23 +44,39 @@
 }
 
 .font-AggroB {
-    font-family: 'SBAggroB';
+    font-family: 'SBAggroB', sans-serif;
 }
 
 .font-AggroM {
-    font-family: 'SBAggroM';
+    font-family: 'SBAggroM', sans-serif;
+}
+
+.font-AggroL {
+    font-family: 'SBAggroL', sans-serif;
+}
+
+.font-SpoqaL {
+    font-family: 'SpoqaHanSansNeo-Light', sans-serif;
 }
 
 .font-SpoqaR {
-    font-family: 'SpoqaHanSansNeo-Regular';
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
 }
 
 .font-SpoqaB {
-    font-family: 'SpoqaHanSansNeo-Bold';
+    font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
 }
 
-.font-size-body {
+.font-size-body1 {
     font-size: 14px;
+}
+
+.font-size-body2 {
+    font-size: 16px;
+}
+
+.font-size-body3 {
+    font-size: 30px;
 }
 
 .font-size-header1 {
@@ -59,16 +87,201 @@
     font-size: 20px;
 }
 
+.font-size-small {
+    font-size: 10px;
+}
+
+.font-size-big {
+    font-size: 56px;
+}
+
+.color-black {
+    color: #1B1B1B;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-gray1 {
+    color: #BDBDBD;
+}
+
+.color-primary {
+    color: #F43B00;
+}
+
+/* 헤더 */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-bottom: 2px solid #F43B00;
+}
+
+/* 푸터 */
+.footer {
+    width: 100%;
+    height: 780px;
+    background: #1B1B1B;
+}
+
+.footer > h3 {
+    text-align: center;
+}
+
+.footer > h3 img {
+    padding-top: 70px;
+    max-width: calc(100% - 40px);
+}
+
+.footer__level01 {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.footer__level01 > ul.sitemap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.footer__level01 > ul.sitemap p {
+    margin-bottom: 16px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.footer__level01 ul.sitemap__list > li {
+    padding: 8px 0;
+}
+
+.footer__level02 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__level02 > .copyright {
+    border-top: 1px solid white;
+    width: calc(100% - 40px);
+}
+
+.footer__level02 > .copyright > p {
+    padding-top: 14px;
+    text-align: center;
+}
+
+
+
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px) {
-    .font-size-body {
+    .font-size-body1 {
         font-size: 16px;
+    }
+
+    .font-size-body2 {
+        font-size: 20px;
+    }
+
+    .font-size-body3{
+        font-size: 18px;
     }
 
     .font-size-header1 {
         font-size: 36px;
     }
+
+    .font-size-small {
+        font-size: 14px;
+    }
+
+    .font-size-big {
+        font-size: 96px;
+    }
+
+    /* 푸터 */
+    .footer {
+        height: 780px;
+    }
+
+    .footer > h3 img {
+        padding-top: 80px;
+        max-width: calc(100% - 240px);
+    }
+
+    .footer__level01 {
+        display: block;
+        padding-bottom: 50px;
+    }
+    
+    .footer__level01 > ul.sitemap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 828px;
+        margin: 0 auto;
+        padding-top: 128px;
+    }
+
+    .footer__level01 > ul.sitemap p {
+        margin-bottom: 24px;
+        display: inline-block;
+    }
+
+	.footer__level01 ul.sitemap__list > li {
+        padding: 10px 0;
+    }
+
+    .footer__level02 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__level02 > .copyright {
+        border-top: 1px solid white;
+        width: calc(100% - 140px);
+    }
+
+    .footer__level02 > .copyright > p {
+        padding-top: 20px;
+        text-align: center;
+    }
 }
 
 /* pc: 1024px 이상 */
-@media all and (min-width:1024px) {}
+@media all and (min-width:1024px) {
+    /* 헤더 */
+    .nav {
+        width: 100%;
+        height: 44px;
+        background: white;
+        border-bottom: 2px solid #F43B00;
+    }
+
+    .nav__detail {
+        max-width: 1396px;
+        margin: 0 auto;
+    }
+
+    .nav > h2 {
+        text-align: right;
+    }
+
+    .nav > h2 img {
+        width: 145px;
+    }
+
+    /* 푸터 */
+    .footer {
+        height: 970px;
+    }
+
+    .footer__level02 > .copyright {
+        width: calc(100% - 240px);
+    }
+}

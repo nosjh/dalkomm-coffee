@@ -1,7 +1,40 @@
 @charset "utf-8";
+.main__banner {
+    width: 100%;
+    height: 665px;
+    background: url(../img/main/mobile/m_main_bg\ copy.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.main__banner > h1 {
+    text-align: center;
+}
+
+.main__banner > h1 img {
+    padding-top: 160px;
+    max-width: calc(100% - 40px);
+}
+
+
 
 /* 테블릿: 767px 이상*/
-@media all and (min-width:767px) {}
+@media all and (min-width:767px) {
+    .main__banner {
+        width: 100%;
+        height: 923px;
+        background: url(../img/main/desktop/main-bg.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .main__banner > h1 img {
+        padding-top: 80px;
+        max-width: calc(100% - 240px);
+    }
+}
 
 /* pc: 1024px 이상 */
-@media all and (min-width:1024px) {}
+@media all and (min-width:1024px) {
+    
+}
