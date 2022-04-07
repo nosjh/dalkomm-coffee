@@ -296,7 +296,7 @@
         padding-bottom: 36px;
     }
 
-    .list__drop li a {
+    .list__drop > li > a {
         padding-left: 5px;
     }
 
