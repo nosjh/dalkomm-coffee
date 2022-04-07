@@ -114,7 +114,6 @@
 /* 메뉴 */
 
 
-
 /* 푸터 */
 .footer {
     width: 100%;
@@ -248,6 +247,12 @@
 
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px) {
+    .con {
+        max-width: 1920px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
     /* 메뉴 */
     .nav {
         position: sticky;
@@ -260,46 +265,53 @@
     }
 
     .nav__detail {
+        margin: 0 auto;
         max-width: 1396px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__detail > .trigger {
+        display: none;
     }
 
     .nav__detail > h2 {
-        text-align: left;
-        line-height: 50px;
+        line-height: 44px;
     }
 
     .nav__detail > h2 img {
         width: 145px;
+        display: block;
     }
 
     .nav .main__list a {
         transition: all 20ms ease-in-out;
     } 
     
-    .nav .menu__main {
-        float: right;
+    .nav__detail > .menu {
+        display: flex;
+        justify-content: space-between;
     }
     
     .nav .menu__main .main__list {
         float: left;
-        list-style: none;
-        position: relative; 
+        position: relative;
     }
 
     .nav .menu__main .main__list a {
         display: block;
         line-height: 44px;
-        padding: 0px 65px 0px 0px;
-    }
-    
-    .nav .menu__main .main__list > a {
-        padding-bottom: 36px;
+        padding: 0 60px 0 10px;
     }
 
-    .list__drop > li > a {
-        padding-left: 5px;
+    .nav .menu__main .main__list:last-child > a {
+        padding-right: 0;
     }
 
+    .nav .menu__main .main__list .list__drop > li a {
+        padding-right: 0;
+    }
 
     .nav .menu__main .main__list a::hover {
         content: '';
@@ -323,15 +335,17 @@
     }
 
     .nav .menu__main .list__drop {
+        width: 100%;
         position: absolute;
         background-color: #fff;
         overflow: hidden;
         max-height: 0px;
         transition: 0.5s;
+        border-top: 2px solid #F43B00;
     }
 
     .nav .menu__main .main__list:hover .list__drop {
-        max-height: 300px;
+        max-height: 200px;
         display: block;
     }
 
