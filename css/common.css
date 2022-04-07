@@ -111,7 +111,7 @@
     color: #F43B00;
 }
 
-/* 헤더 */
+/* 메뉴 */
 .nav {
     position: sticky;
     top: 0;
@@ -121,6 +121,8 @@
     background: white;
     border-bottom: 2px solid #F43B00;
 }
+
+
 
 /* 푸터 */
 .footer {
@@ -264,8 +266,7 @@
     }
 
     .nav__detail {
-        max-width: 1396px;
-        margin: 0 auto;
+        width: calc(100% - 240px);
     }
 
     .nav > h2 {
@@ -273,7 +274,7 @@
     }
 
     .nav > h2 img {
-        width: 145px;
+        width: 10%;
     }
 
     /* 푸터 */
