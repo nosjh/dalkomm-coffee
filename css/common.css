@@ -112,15 +112,6 @@
 }
 
 /* 메뉴 */
-.nav {
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    width: 100%;
-    height: 50px;
-    background: white;
-    border-bottom: 2px solid #F43B00;
-}
 
 
 
@@ -257,8 +248,11 @@
 
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px) {
-    /* 헤더 */
+    /* 메뉴 */
     .nav {
+        position: sticky;
+        top: 0;
+        z-index: 2;
         width: 100%;
         height: 44px;
         background: white;
@@ -266,15 +260,85 @@
     }
 
     .nav__detail {
-        width: calc(100% - 240px);
+        max-width: 1396px;
     }
 
-    .nav > h2 {
-        text-align: right;
+    .nav__detail > h2 {
+        text-align: left;
+        line-height: 50px;
     }
 
-    .nav > h2 img {
-        width: 10%;
+    .nav__detail > h2 img {
+        width: 145px;
+    }
+
+    .nav .main__list a {
+        transition: all 20ms ease-in-out;
+    } 
+    
+    .nav .menu__main {
+        float: right;
+    }
+    
+    .nav .menu__main .main__list {
+        float: left;
+        list-style: none;
+        position: relative; 
+    }
+
+    .nav .menu__main .main__list a {
+        display: block;
+        line-height: 44px;
+        padding: 0px 65px 0px 0px;
+    }
+    
+    .nav .menu__main .main__list > a {
+        padding-bottom: 36px;
+    }
+
+    .list__drop li a {
+        padding-left: 5px;
+    }
+
+
+    .nav .menu__main .main__list a::hover {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 1px;
+        margin-left: 5px;
+        margin-top: -1px;
+        background: #000;
+        transition: all .3s;
+    }
+
+    .nav .menu__main .main__list a:hover::after {
+        width: 200%;
+        transition: all .3s;
+    }
+
+    .nav .menu__main .main__list a:hover {
+        color:#F43B00;
+        transition: 400ms;
+    }
+
+    .nav .menu__main .list__drop {
+        position: absolute;
+        background-color: #fff;
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.5s;
+    }
+
+    .nav .menu__main .main__list:hover .list__drop {
+        max-height: 300px;
+        display: block;
+    }
+
+    .nav .menu__main .list__drop a:hover {
+        background-color: #F43B00;
+        color: white;
+        transition: 150ms;
     }
 
     /* 푸터 */
