@@ -1,6 +1,7 @@
 @charset "utf-8";
-
 /* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 @font-face {
     font-family: 'SBAggroL';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
@@ -37,10 +38,19 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+    font-family: 'Binggrae-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
-.font-Fredoka {
-    font-family: 'Fredoka One', cursive;
+.Fredoka {
+    font-family: 'Fredoka One', cursive, sans-serif;
+}
+
+.font-Binggrae {
+    font-family: 'Binggrae-Bold', sans-serif;
 }
 
 .font-AggroB {
@@ -67,32 +77,36 @@
     font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
 }
 
+html {
+    font-size:10px;
+}
+
 .font-size-body1 {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .font-size-body2 {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .font-size-body3 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .font-size-header1 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .font-size-header2 {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .font-size-small {
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .font-size-big {
-    font-size: 56px;
+    font-size: 5.6rem;
 }
 
 .color-black {
@@ -130,12 +144,12 @@
     max-width: calc(100% - 40px);
 }
 
-.footer__level01 {
+.footer__level1 {
     display: block;
     padding-bottom: 20px;
 }
 
-.footer__level01 > ul.sitemap {
+.footer__level1 > ul.sitemap {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -143,27 +157,27 @@
     padding-left: 20px;
 }
 
-.footer__level01 > ul.sitemap p {
+.footer__level1 > ul.sitemap p {
     margin-bottom: 16px;
     margin-top: 30px;
     display: inline-block;
 }
 
-.footer__level01 ul.sitemap__list > li {
+.footer__level1 ul.sitemap__list > li {
     padding: 8px 0;
 }
 
-.footer__level02 {
+.footer__level2 {
     display: flex;
     justify-content: center;
 }
 
-.footer__level02 > .copyright {
+.footer__level2 > .copyright {
     border-top: 1px solid white;
     width: calc(100% - 40px);
 }
 
-.footer__level02 > .copyright > p {
+.footer__level2 > .copyright > p {
     padding-top: 14px;
     text-align: center;
 }
@@ -173,27 +187,27 @@
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px) {
     .font-size-body1 {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .font-size-body2 {
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     .font-size-body3{
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .font-size-header1 {
-        font-size: 36px;
+        font-size: 3.6rem;
     }
 
     .font-size-small {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .font-size-big {
-        font-size: 96px;
+        font-size: 9.6rem;
     }
 
     /* 푸터 */
@@ -206,12 +220,12 @@
         max-width: calc(100% - 240px);
     }
 
-    .footer__level01 {
+    .footer__level1 {
         display: block;
         padding-bottom: 50px;
     }
     
-    .footer__level01 > ul.sitemap {
+    .footer__level1 > ul.sitemap {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -220,26 +234,26 @@
         padding-top: 128px;
     }
 
-    .footer__level01 > ul.sitemap p {
+    .footer__level1 > ul.sitemap p {
         margin-bottom: 24px;
         display: inline-block;
     }
 
-	.footer__level01 ul.sitemap__list > li {
+	.footer__level1 ul.sitemap__list > li {
         padding: 10px 0;
     }
 
-    .footer__level02 {
+    .footer__level2 {
         display: flex;
         justify-content: center;
     }
 
-    .footer__level02 > .copyright {
+    .footer__level2 > .copyright {
         border-top: 1px solid white;
         width: calc(100% - 140px);
     }
 
-    .footer__level02 > .copyright > p {
+    .footer__level2 > .copyright > p {
         padding-top: 20px;
         text-align: center;
     }
@@ -360,7 +374,7 @@
         height: 970px;
     }
 
-    .footer__level02 > .copyright {
+    .footer__level2 > .copyright {
         width: calc(100% - 240px);
     }
 }

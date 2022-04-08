@@ -16,6 +16,94 @@
     max-width: calc(100% - 40px);
 }
 
+/* 2,3번째 섹션 */
+.container {
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(6, minmax(0px, 1fr));
+    border-bottom: 2px solid #F43B00;
+    padding-top: 50px;
+}
+
+.grid1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.grid2 {
+    display: none;
+}
+
+.grid3 {
+    grid-row: 2;
+    grid-column: 1 / span 6;
+}
+
+.grid3 i {
+    vertical-align: middle;
+}
+
+.grid4 {
+    grid-row: 3;
+    grid-column: 1 / span 6;
+}
+
+.grid__txt1 {
+    padding-top: 20px;
+}
+
+.grid__txt2 {
+    padding-top: 8px;
+    padding-bottom: 60px;
+}
+
+.signature__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.signature__list li a img {
+    width: 100%;
+}
+
+.season__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.season__list li a img {
+    width: 100%;
+}
+
+
+/* 4번째 섹션 */
+.slogan {
+    max-width: calc(100% - 40px);
+    height: 632px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan div p {
+    text-align: center;
+}
+
+.slogan div p:first-child {
+    padding: 60px 0 10px 0;
+}
+
+.slogan div p:nth-child(2) {
+    padding: 10px 0 40px 0;
+}
+
+.slogan div img {
+    display: block;
+    margin: 0 auto;
+    max-width: calc(100% - 40px);
+}
 
 
 /* 테블릿: 767px 이상*/
@@ -33,7 +121,119 @@
         max-width: calc(100% - 240px);
     }
 
+    /* 2,3번째 섹션 */
+    .container {
+        max-width: calc(100% - 240px);
+        height: 970px;
+        margin: 0 auto;
+        display: grid;
+        gap: 24px;
+        grid-template-rows: 36px 68px 618px;
+        grid-template-columns: repeat(12, minmax(0px, 1fr));
+        border-bottom: 2px solid #F43B00;
+        padding-top: 60px;
+    }
     
+    .grid1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .grid2 {
+        display: block;
+        grid-row: 1;
+        grid-column: 4 / span 9;
+    }
+    
+    .grid3 {
+        grid-row: 2;
+        grid-column: 4 / span 9;
+    }
+
+    .grid3 i {
+        vertical-align: middle;
+    }
+
+    .grid4 {
+        grid-row: 3;
+        grid-column: 4 / span 9;
+    }
+
+    .grid__txt1 {
+        padding-top: 20px;
+    }
+
+    .grid__txt2 {
+        padding-top: 8px;
+    }
+
+    .signature__list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .season__list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .signature__list li a img {
+        
+    }
+
+    .img1 {
+        content: url(../img/main/coffee_01.png);
+    }
+
+    .img2 {
+        content: url(../img/main/coffee_02.png);
+    }
+
+    .img3 {
+        content: url(../img/main/coffee_03.png);
+    }
+
+    .img4 {
+        content: url(../img/main/coffee_04.png);
+    }
+
+    .img5 {
+        content: url(../img/main/coffee_05.png);
+    }
+
+    .img6 {
+        content: url(../img/main/coffee_06.png);
+    }
+
+    /* 4번째 섹션 */
+    .slogan {
+        max-width: 1680px;
+        height: 970px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slogan div p {
+        text-align: center;
+    }
+
+    .slogan div p:first-child {
+        padding: 60px 0 15px 0;
+    }
+    
+    .slogan div p:nth-child(2) {
+        padding: 15px 0 90px 0;
+    }
+
+    .slogan div img {
+        display: block;
+        margin: 0 auto;
+        max-width: 828px;
+    }
+
 }
 
 /* pc: 1024px 이상 */
