@@ -83,6 +83,7 @@ html {
 
 .font-size-body1 {
     font-size: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .font-size-body2 {
@@ -107,6 +108,7 @@ html {
 
 .font-size-big {
     font-size: 5.6rem;
+    line-height: 6.4rem;
 }
 
 .color-black {
@@ -126,6 +128,38 @@ html {
 }
 
 /* 메뉴 */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-bottom: 2px solid #F43B00;
+}
+
+.nav__detail > h2 {
+    line-height: 50px;
+}
+
+.nav__detail > h2 img {
+    max-width: 116px;
+    display: block;
+}
+
+
+.menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* 푸터 */
@@ -188,6 +222,7 @@ html {
 @media all and (min-width:767px) {
     .font-size-body1 {
         font-size: 1.6rem;
+        line-height: 2rem;
     }
 
     .font-size-body2 {
@@ -208,6 +243,7 @@ html {
 
     .font-size-big {
         font-size: 9.6rem;
+        line-height: 11rem;
     }
 
     /* 푸터 */
@@ -295,7 +331,7 @@ html {
     }
 
     .nav__detail > h2 img {
-        width: 145px;
+        max-width: 145px;
         display: block;
     }
 

@@ -121,6 +121,10 @@
         max-width: calc(100% - 240px);
     }
 
+    /* 1번째 섹션 */
+
+    
+
     /* 2,3번째 섹션 */
     .container {
         max-width: calc(100% - 240px);
@@ -136,7 +140,7 @@
     
     .grid1 {
         grid-row: 1;
-        grid-column: 1;
+        grid-column: 1 / span 3;
     }
 
     .grid2 {
@@ -159,6 +163,12 @@
         grid-column: 4 / span 9;
     }
 
+    .grid5 {
+        display: inline-block;
+        grid-row: 3;
+        grid-column: 1;
+    }
+
     .grid__txt1 {
         padding-top: 20px;
     }
@@ -179,8 +189,14 @@
         gap: 24px;
     }
 
-    .signature__list li a img {
-        
+    .signature__list li a {
+        display: inline-block;
+        width: 398px;
+    }
+
+    .season__list li a {
+        display: inline-block;
+        width: 398px;
     }
 
     .img1 {
