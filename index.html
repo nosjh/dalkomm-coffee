@@ -1,253 +1,465 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./library/fontawesome-free-6.1.1-web/css/all.min.css">
-    <link rel="stylesheet" href="./library/animate.css-main/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./library/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./library/animate.css-main/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <!-- 메인이미지 -->
-        <div class="main__banner">
-            <h1 class="main__logo">
-                <img src="./img/main/dalkomm-white.svg" alt="로고" >
-            </h1>
-        </div>
+      <!-- 메인이미지 -->
+      <div class="main__banner">
+        <h1 class="main__logo">
+          <img src="./img/main/dalkomm-white.svg" alt="로고" />
+        </h1>
+      </div>
     </header>
 
     <!-- 메뉴바 -->
     <nav class="nav">
-        <div class="nav__detail">
-            <h2>
-                <a href="./index.html"><img src="./img/main/dalkomm_sub.svg" alt="로고" class="logo"></a>
-            </h2>
-            <!-- <input type="checkbox" id="overlay-input" /> -->
-            <!-- <label for="overlay-input" id="overlay-button"><span></span></label> -->
-            <div class="trigger">
-            </div>
-            <div class="menu">
-                <ul class="menu__main">
-                    <li class="main__list">
-                        <a href="#" class="font-SpoqaB font-size-body3 color-black">Dal.komm</a>
-                        <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">브랜드 이야기</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">App 소개</a></li>
-                        </ul>
-                    </li>
-                    <li class="main__list">
-                        <a href="#" class="font-SpoqaB font-size-body3 color-black">메뉴·매장</a>
-                        <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">메뉴</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">매장찾기</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">글로벌 달콤</a></li>
-                        </ul>
-                    </li>
-                    <li class="main__list">
-                        <a href="#" class="font-SpoqaB font-size-body3 color-black">창업안내</a>
-                        <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">가맹점 개설 안내</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">창업 상담 신청</a></li>
-                        </ul>
-                    </li>
-                    <li class="main__list">
-                        <a href="#" class="font-SpoqaB font-size-body3 color-black color-black">새로운 소식</a>
-                        <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">뉴스</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">공지사항</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">달콤 스토리</a></li>
-                        </ul>
-                    </li>
-                    <li class="main__list">
-                        <a href="#" class="font-SpoqaB font-size-body3 color-black">SHOP</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="nav__detail">
+        <h2>
+          <a href="./index.html"
+            ><img src="./img/main/dalkomm_sub.svg" alt="로고" class="logo"
+          /></a>
+        </h2>
+        <!-- <input type="checkbox" id="overlay-input" /> -->
+        <!-- <label for="overlay-input" id="overlay-button"><span></span></label> -->
+        <div class="trigger"></div>
+        <div class="menu">
+          <ul class="menu__main">
+            <li class="main__list">
+              <a href="#" class="font-SpoqaB font-size-body3 color-black"
+                >Dal.komm</a
+              >
+              <ul class="list__drop">
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >브랜드 이야기</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >App 소개</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main__list">
+              <a href="#" class="font-SpoqaB font-size-body3 color-black"
+                >메뉴·매장</a
+              >
+              <ul class="list__drop">
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >메뉴</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >매장찾기</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >글로벌 달콤</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main__list">
+              <a href="#" class="font-SpoqaB font-size-body3 color-black"
+                >창업안내</a
+              >
+              <ul class="list__drop">
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >가맹점 개설 안내</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >창업 상담 신청</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main__list">
+              <a
+                href="#"
+                class="font-SpoqaB font-size-body3 color-black color-black"
+                >새로운 소식</a
+              >
+              <ul class="list__drop">
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >뉴스</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >공지사항</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-SpoqaR font-size-body1 color-black"
+                    >달콤 스토리</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main__list">
+              <a href="#" class="font-SpoqaB font-size-body3 color-black"
+                >SHOP</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- 메인 컨텐츠 -->
     <main class="main__content">
-        <section class="event container">
-            <div class="grid1">
-                <p class="font-AggroB font-size-header1 color-primary">Event</p>
-            </div>
-            <div class="grid2">
-                <p class="font-SpoqaR font-size-body1 color-black">
-                    가장 트랜디한 커피전문점, 그리고 다양한 음악과 문화를 소비하는 플랫폼으로서<br>
-                    맛과 식의 경험을 넘어 향유할 수 있는 공간이 되어 여러분의 달콤한 상상, 행복한 상상을 응원하겠습니다.
-                </p>
-            </div>
-            <div class="grid5">
-                <ul>
-                    <li>
-                        <button class="event__btn font-AggroM font-size-body1 color-black" title="진행중 이벤트" aria-label="진행중 이벤트">진행중 이벤트</button>
-                    </li>
-                    <li>
-                        <button class="event__btn font-AggroM font-size-body1 color-black" title="종료된 이벤트" aria-label="종료된 이벤트">종료된 이벤트</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="grid4 slide">
-                <div class="swiper mySwiper">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
-                            <div class="img-wrap">
-                                <img src="./img/main/slide/event_01_copy.png" alt="이벤트">
-                            </div>
-                            <div class="txt-wrap">
-                                <p class="font-AggroM font-size-header2 color-black">나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택</p>
-                            </div>
-                        </li>
-                        <div class="swiper-slide slide2"></div>
-                        <div class="swiper-slide slide3"></div>
-                        <div class="swiper-slide slide4"></div>
-                    </ul>
-                    <div class="swiper-pagination"></div>
+      <section class="event container">
+        <div class="grid1">
+          <p class="font-AggroB font-size-header1 color-primary">Event</p>
+        </div>
+        <div class="grid2">
+          <p class="font-SpoqaR font-size-body1 color-black">
+            가장 트랜디한 커피전문점, 그리고 다양한 음악과 문화를 소비하는
+            플랫폼으로서<br />
+            맛과 식의 경험을 넘어 향유할 수 있는 공간이 되어 여러분의 달콤한
+            상상, 행복한 상상을 응원하겠습니다.
+          </p>
+        </div>
+        <div class="grid5">
+          <ul>
+            <li>
+              <button
+                class="event__btn font-AggroM font-size-body1 color-black"
+                title="진행중 이벤트"
+                aria-label="진행중 이벤트"
+              >
+                진행중 이벤트
+              </button>
+            </li>
+            <li>
+              <button
+                class="event__btn font-AggroM font-size-body1 color-black"
+                title="종료된 이벤트"
+                aria-label="종료된 이벤트"
+              >
+                종료된 이벤트
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="grid4 slide">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-wrap">
+                  <img src="./img/main/slide/event_01_copy.png" alt="이벤트" />
                 </div>
+                <div class="txt-wrap">
+                  <p class="font-AggroM font-size-header2 color-black">
+                    나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide slide2">
+                <div class="img-wrap">
+                  <img src="./img/main/slide/event_01_copy.png" alt="이벤트" />
+                </div>
+                <div class="txt-wrap">
+                  <p class="font-AggroM font-size-header2 color-black">
+                    나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide slide3">
+                <div class="img-wrap">
+                  <img src="./img/main/slide/event_01_copy.png" alt="이벤트" />
+                </div>
+                <div class="txt-wrap">
+                  <p class="font-AggroM font-size-header2 color-black">
+                    나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide slide4">
+                <div class="img-wrap">
+                  <img src="./img/main/slide/event_01_copy.png" alt="이벤트" />
+                </div>
+                <div class="txt-wrap">
+                  <p class="font-AggroM font-size-header2 color-black">
+                    나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-    
-        <section class="container">
-            <div class="grid1">
-                <p class="font-AggroB font-size-header1 color-primary">Season</p>
-            </div>
-            <div class="grid2">
-                <p class="font-SpoqaR font-size-body1 color-black">
-                    커피의 본질적인 것을 통한 커피의 전문성을 부각 시키는 컨텐츠와 함께 비쥬얼, 맛, 건강함, 그리고 마시는 재미까지 함께 선사합니다.<br>
-                    달콤커피의 다양한 시즌음료를 즐겨보세요.
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="grid1">
+          <p class="font-AggroB font-size-header1 color-primary">Season</p>
+        </div>
+        <div class="grid2">
+          <p class="font-SpoqaR font-size-body1 color-black">
+            커피의 본질적인 것을 통한 커피의 전문성을 부각 시키는 컨텐츠와 함께
+            비쥬얼, 맛, 건강함, 그리고 마시는 재미까지 함께 선사합니다.<br />
+            달콤커피의 다양한 시즌음료를 즐겨보세요.
+          </p>
+        </div>
+        <div class="grid3">
+          <a href="" class="font-AggroM font-size-body1 color-black border1"
+            >메뉴 더보기 <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+        <div class="grid4">
+          <ul class="season__list">
+            <li>
+              <a href="">
+                <img
+                  class="image img1"
+                  src="./img/main/m_coffee_01.png"
+                  alt="스프링티"
+                />
+                <p class="font-AggroM font-size-header2 color-black grid__txt1">
+                  스프링티
                 </p>
-            </div>
-            <div class="grid3">
-                <a href="" class="font-AggroM font-size-body1 color-black border1">메뉴 더보기 <i class="fa-solid fa-arrow-right-long"></i></a>
-            </div>
-            <div class="grid4">
-                <ul class="season__list">
-                    <li>
-                        <a href="">
-                            <img class="image img1" src="./img/main/m_coffee_01.png" alt="스프링티">
-                            <p class="font-AggroM font-size-header2 color-black grid__txt1">스프링티</p>
-                            <p class="font-SpoqaR font-size-body1 color-black grid__txt2">상큼한 한라봉과 달큰한 도라지의 매력적인 조화로 봄에 어울리는 건강차</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="image img2" src="./img/main/m_coffee_02.png" alt="한라봉 에이드">
-                            <p class="font-AggroM font-size-header2 color-black grid__txt1">한라봉 에이드</p>
-                            <p class="font-SpoqaR font-size-body1 color-black grid__txt2">상큼달콤한 한라봉에 로즈마리를 더해 싱그러운 봄을 즐길 수 있는 에이드</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="image img3" src="./img/main/m_coffee_03.png" alt="스프링 블라썸 블렌디드">
-                            <p class="font-AggroM font-size-header2 color-black grid__txt1">스프링 블라썸 블렌디드</p>
-                            <p class="font-SpoqaR font-size-body1 color-black grid__txt2">상큼한 한라봉에 부드러운 말차를 더해 싱그럽게 피어나는 봄을 형상화한 블렌디드</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    
-        <section class="container">
-            <div class="grid1">
-                <p class="font-AggroB font-size-header1 color-primary">signature</p>
-            </div>
-            <div class="grid2">
-                <p class="font-SpoqaR font-size-body1 color-black">
-                    커피의 본질적인 것을 통한 커피의 전문성을 부각 시키는 컨텐츠와 함께 비쥬얼, 맛, 건강함, 그리고 마시는 재미까지 함께 선사합니다.<br>
-                    달콤커피의 다양한 시그니처음료를 즐겨보세요.
+                <p class="font-SpoqaR font-size-body1 color-black grid__txt2">
+                  상큼한 한라봉과 달큰한 도라지의 매력적인 조화로 봄에 어울리는
+                  건강차
                 </p>
-            </div>
-            <div class="grid3">
-                <a href="" class="font-AggroM font-size-body1 color-black border1">메뉴 더보기 <i class="fa-solid fa-arrow-right-long"></i></a>
-            </div>
-            <div class="grid4">
-                <ul class="signature__list">
-                    <li>
-                        <a href="">
-                            <img class="image img4" src="./img/main/m_coffee_04.png" alt="큐브">
-                            <p class="font-AggroM font-size-header2 color-black grid__txt1">큐브</p>
-                            <p class="font-SpoqaR font-size-body1 color-black grid__txt2">큐브 모양의 에스프레소 얼음이 따뜻한 우유에 녹아내리면서 다양한 맛을 느낄 수 있는 dal.komm만의 아이스 라떼 음료</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="image img5" src="./img/main/m_coffee_05.png" alt="허니큐브">
-                            <p class="font-AggroM font-size-header2 color-black grid__txt1">허니큐브</p>
-                            <p class="font-SpoqaR font-size-body1 color-black grid__txt2">곱게 갈은 에스프레소 큐브 얼음에 꿀이 어우러져 더욱 달콤해진 dal.komm만의 허니음료</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="image img6" src="./img/main/m_coffee_06.png" alt="베리큐브">
-                            <p class="font-AggroM font-size-header2 color-black grid__txt1">베리큐브</p>
-                            <p class="font-SpoqaR font-size-body1 color-black grid__txt2">비타민C가 풍부한 딸기를 갈아 꿀과 함께 우유에 섞어 마시는 부드러운 딸기라떼</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    
-        <section class="slogan">
-            <div>
-                <p class="font-AggroB font-size-header1 color-primary">달콤, 상상이 일상이 되는 곳</p>
-                <p class="Fredoka font-size-big color-primary">
-                    Dal.Komm Life begins<br>
-                    with imagination
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  class="image img2"
+                  src="./img/main/m_coffee_02.png"
+                  alt="한라봉 에이드"
+                />
+                <p class="font-AggroM font-size-header2 color-black grid__txt1">
+                  한라봉 에이드
                 </p>
-                <img src="./img/main/brand_intro.svg" alt="브랜드 이미지">
-            </div>
-        </section>
+                <p class="font-SpoqaR font-size-body1 color-black grid__txt2">
+                  상큼달콤한 한라봉에 로즈마리를 더해 싱그러운 봄을 즐길 수 있는
+                  에이드
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  class="image img3"
+                  src="./img/main/m_coffee_03.png"
+                  alt="스프링 블라썸 블렌디드"
+                />
+                <p class="font-AggroM font-size-header2 color-black grid__txt1">
+                  스프링 블라썸 블렌디드
+                </p>
+                <p class="font-SpoqaR font-size-body1 color-black grid__txt2">
+                  상큼한 한라봉에 부드러운 말차를 더해 싱그럽게 피어나는 봄을
+                  형상화한 블렌디드
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="grid1">
+          <p class="font-AggroB font-size-header1 color-primary">signature</p>
+        </div>
+        <div class="grid2">
+          <p class="font-SpoqaR font-size-body1 color-black">
+            커피의 본질적인 것을 통한 커피의 전문성을 부각 시키는 컨텐츠와 함께
+            비쥬얼, 맛, 건강함, 그리고 마시는 재미까지 함께 선사합니다.<br />
+            달콤커피의 다양한 시그니처음료를 즐겨보세요.
+          </p>
+        </div>
+        <div class="grid3">
+          <a href="" class="font-AggroM font-size-body1 color-black border1"
+            >메뉴 더보기 <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+        <div class="grid4">
+          <ul class="signature__list">
+            <li>
+              <a href="">
+                <img
+                  class="image img4"
+                  src="./img/main/m_coffee_04.png"
+                  alt="큐브"
+                />
+                <p class="font-AggroM font-size-header2 color-black grid__txt1">
+                  큐브
+                </p>
+                <p class="font-SpoqaR font-size-body1 color-black grid__txt2">
+                  큐브 모양의 에스프레소 얼음이 따뜻한 우유에 녹아내리면서
+                  다양한 맛을 느낄 수 있는 dal.komm만의 아이스 라떼 음료
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  class="image img5"
+                  src="./img/main/m_coffee_05.png"
+                  alt="허니큐브"
+                />
+                <p class="font-AggroM font-size-header2 color-black grid__txt1">
+                  허니큐브
+                </p>
+                <p class="font-SpoqaR font-size-body1 color-black grid__txt2">
+                  곱게 갈은 에스프레소 큐브 얼음에 꿀이 어우러져 더욱 달콤해진
+                  dal.komm만의 허니음료
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  class="image img6"
+                  src="./img/main/m_coffee_06.png"
+                  alt="베리큐브"
+                />
+                <p class="font-AggroM font-size-header2 color-black grid__txt1">
+                  베리큐브
+                </p>
+                <p class="font-SpoqaR font-size-body1 color-black grid__txt2">
+                  비타민C가 풍부한 딸기를 갈아 꿀과 함께 우유에 섞어 마시는
+                  부드러운 딸기라떼
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slogan">
+        <div>
+          <p class="font-AggroB font-size-header1 color-primary">
+            달콤, 상상이 일상이 되는 곳
+          </p>
+          <p class="Fredoka font-size-big color-primary">
+            Dal.Komm Life begins<br />
+            with imagination
+          </p>
+          <img src="./img/main/brand_intro.svg" alt="브랜드 이미지" />
+        </div>
+      </section>
     </main>
 
     <!-- 푸터 -->
     <footer class="footer">
-        <h3>
-            <img src="./img/main/dalkomm-white.svg" alt="로고" class="logo">
-        </h3>
-        <div class="footer__level1">
-            <ul class="sitemap">
-                <li>
-                    <p class="font-SpoqaB font-size-body2 color-white">고객을 위한 달콤</p>
-                    <ul class="sitemap__list">
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">문의하기</a></li>
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">고객상담센터 1661-1399</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="font-SpoqaB font-size-body2 color-white">파트너를 위한 달콤</p>
-                    <ul class="sitemap__list">
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">협력업체 문의</a></li>
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">가맹 문의</a></li>
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">제휴·마케팅 문의</a></li>
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">브랜드 소개서</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="font-SpoqaB font-size-body2 color-white">개인정보 보호 및 약관</p>
-                    <ul class="sitemap__list">
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">개인정보 처리방침</a></li>
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">서비스 이용약관</a></li>
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">위치기반서비스 이용약관</a></li>
-                        <li><a href="#" class="font-SpoqaR font-size-body1 color-white">영상정보 처리기기 운영관리 방침</a></li>
-                    </ul>
-                </li>
+      <h3>
+        <img src="./img/main/dalkomm-white.svg" alt="로고" class="logo" />
+      </h3>
+      <div class="footer__level1">
+        <ul class="sitemap">
+          <li>
+            <p class="font-SpoqaB font-size-body2 color-white">
+              고객을 위한 달콤
+            </p>
+            <ul class="sitemap__list">
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >문의하기</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >고객상담센터 1661-1399</a
+                >
+              </li>
             </ul>
+          </li>
+          <li>
+            <p class="font-SpoqaB font-size-body2 color-white">
+              파트너를 위한 달콤
+            </p>
+            <ul class="sitemap__list">
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >협력업체 문의</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >가맹 문의</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >제휴·마케팅 문의</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >브랜드 소개서</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="font-SpoqaB font-size-body2 color-white">
+              개인정보 보호 및 약관
+            </p>
+            <ul class="sitemap__list">
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >개인정보 처리방침</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >서비스 이용약관</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >위치기반서비스 이용약관</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-SpoqaR font-size-body1 color-white"
+                  >영상정보 처리기기 운영관리 방침</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__level2">
+        <div class="copyright">
+          <p class="font-SpoqaL font-size-small color-white">
+            Copyright ⓒ 222 (주)달콤 All Rights Reserved.
+          </p>
         </div>
-        <div class="footer__level2">
-            <div class="copyright">
-                <p class="font-SpoqaL font-size-small color-white">Copyright ⓒ 222 (주)달콤 All Rights Reserved.</p>
-            </div>
-        </div>
+      </div>
     </footer>
-<script src="./js/common.js"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="./js/main.js"></script>
-</body>
+    <script src="./js/common.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
