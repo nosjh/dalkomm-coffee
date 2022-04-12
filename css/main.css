@@ -264,6 +264,30 @@
         width: 398px;
     }
 
+    .season__list > li {
+        overflow: hidden;
+    }
+
+    .signature__list > li {
+        overflow: hidden;
+    }
+
+    .image {
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    .image:hover {  
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
     .img1 {
         content: url(../img/main/coffee_01.png);
     }
