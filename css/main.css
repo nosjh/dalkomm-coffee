@@ -17,6 +17,23 @@
 }
 
 /* 1번째 섹션 */
+.grid5 {
+    grid-row: 2;
+    grid-column: 1 / span 6;
+}
+
+.grid5 ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.event__btn {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid;
+    text-align: left;
+}
 
 
 
@@ -43,10 +60,6 @@
 .grid3 {
     grid-row: 2;
     grid-column: 1 / span 6;
-}
-
-.gird3 > a {
-    border-bottom: 1px solid;
 }
 
 .grid3 i {
@@ -212,9 +225,13 @@
     }
 
     .grid5 {
-        display: inline-block;
         grid-row: 3;
         grid-column: 1 / span 2;
+    }
+
+    .grid5 ul {
+        display: flex;
+        flex-direction: column;
     }
 
     .grid__txt1 {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./library/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./library/animate.css-main/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -241,15 +241,16 @@
     </footer>
 <script src="./js/common.js"></script>
 <script src="./js/main.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-</script>
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
