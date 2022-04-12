@@ -411,6 +411,7 @@ input[type=checkbox] {
 
     .nav__detail > h2 {
         line-height: 44px;
+        width: 145px;
     }
 
     .nav__detail > h2 img {

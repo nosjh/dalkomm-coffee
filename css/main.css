@@ -154,6 +154,7 @@
     }
 
     /* 슬라이드 */
+
     .swiper {
         width: 100%;
         height: 100%;
@@ -185,6 +186,35 @@
         height: 100%;
         object-fit: cover;
     }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .swiper-slide.slide2 {
+        background: url(../img/main/slide/event_02.png);
+        background-size: cover;
+        background-position:center;
+    }
+
+    .swiper-slide.slide3 {
+        background: url(../img/main/slide/event_03.png);
+        background-size: cover;
+        background-position:center;
+    }
+
+    .swiper-slide.slide4 {
+        background: url(../img/main/slide/event_04.png);
+        background-size: cover;
+        background-position:center;
+    }
+
+    .img-wrap {
+        
+    }
+
 
     /* 2,3번째 섹션 */
     .container {
@@ -264,11 +294,11 @@
         width: 398px;
     }
 
-    .season__list > li {
+    .season__list > li > a {
         overflow: hidden;
     }
 
-    .signature__list > li {
+    .signature__list > li > a {
         overflow: hidden;
     }
 
@@ -286,6 +316,7 @@
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
+        margin-bottom: 20px;
     }
 
     .img1 {
