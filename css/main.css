@@ -1,4 +1,8 @@
 @charset "utf-8";
+.pc-only {
+    display: none;
+}
+
 .main__banner {
     width: 100%;
     height: 665px;
@@ -77,7 +81,7 @@
 
 .grid__txt2 {
     padding-top: 8px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .signature__list {
@@ -93,8 +97,7 @@
     display: flex;
     flex-direction: column;
 }
-
-.season__list li a img {
+.image-box img {
     width: 100%;
 }
 
@@ -129,6 +132,16 @@
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px) {
+
+    .mobile-only {
+        display: none;
+    }
+
+    .pc-only {
+        display: block;
+    }
+
+
     .main__banner {
         width: 100%; 
         height: 923px;
@@ -190,7 +203,7 @@
     .swiper-slide {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 70% !important;
     }
 
     .swiper-slide.slide2 {
@@ -284,24 +297,15 @@
         gap: 24px;
     }
 
-    .signature__list li a {
-        display: inline-block;
-        width: 398px;
+    .season__list > li > div {
+        max-width: 398px;
     }
 
-    .season__list li a {
-        display: inline-block;
+    .image-box {
         width: 398px;
-    }
-
-    .season__list > li > a {
         overflow: hidden;
     }
-
-    .signature__list > li > a {
-        overflow: hidden;
-    }
-
+    
     .image {
         -webkit-transition: all .5s ease;
         -moz-transition: all .5s ease;
@@ -309,38 +313,13 @@
         -o-transition: all .5s ease;
         transition: all .5s ease;
     }
-
-    .image:hover {  
+    
+    .image:hover {
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
-        margin-bottom: 20px;
-    }
-
-    .img1 {
-        content: url(../img/main/coffee_01.png);
-    }
-
-    .img2 {
-        content: url(../img/main/coffee_02.png);
-    }
-
-    .img3 {
-        content: url(../img/main/coffee_03.png);
-    }
-
-    .img4 {
-        content: url(../img/main/coffee_04.png);
-    }
-
-    .img5 {
-        content: url(../img/main/coffee_05.png);
-    }
-
-    .img6 {
-        content: url(../img/main/coffee_06.png);
     }
 
     /* 4번째 섹션 */
