@@ -442,7 +442,11 @@ input[type=checkbox] {
     .nav .menu__main .main__list a {
         display: block;
         line-height: 44px;
-        padding: 0 55px 0 5px;
+        padding: 0 55px 0 10px;
+    }
+    
+    .nav .menu__main .main__list .list__drop > li a {
+        padding-right: 0;
     }
 
     .nav .menu__main .main__list a::hover {
