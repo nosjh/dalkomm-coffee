@@ -203,7 +203,13 @@
     .swiper-slide {
         display: flex;
         flex-direction: column;
-        width: 70% !important;
+        width: 66% !important;
+    }
+
+    .swiper-slide.slide2 {
+        background: url(../img/main/slide/event_01.png);
+        background-size: cover;
+        background-position:center;
     }
 
     .swiper-slide.slide2 {
@@ -225,7 +231,12 @@
     }
 
     .img-wrap {
-        
+        margin: 0 auto;
+    }
+
+    .txt-wrap {
+        padding-top: 20px;
+        text-align: left;
     }
 
 
