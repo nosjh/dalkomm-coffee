@@ -245,11 +245,6 @@ input[type=checkbox] {
 
 
 
-
-
-
-
-
 /* 푸터 */
 .footer {
     width: 100%;
@@ -353,10 +348,21 @@ input[type=checkbox] {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        max-width: 828px;
+        max-width: 820px;
         margin: 0 auto;
-        padding-top: 128px;
+        padding-top: 98px;
+        padding-left: 0;
     }
+
+    .footer__level1 > ul.sitemap > li {
+        width: 33.33%;
+        padding-right: 24px;
+    }
+
+    .footer__level1 > ul.sitemap > li:last-child {
+        padding-right: 0;
+    }
+
 
     .footer__level1 > ul.sitemap p {
         margin-bottom: 24px;
@@ -437,14 +443,6 @@ input[type=checkbox] {
         display: block;
         line-height: 44px;
         padding: 0 55px 0 5px;
-    }
-
-    .nav .menu__main .main__list:last-child > a {
-        padding-right: 0;
-    }
-
-    .nav .menu__main .main__list .list__drop > li a {
-        padding-right: 0;
     }
 
     .nav .menu__main .main__list a::hover {

@@ -169,6 +169,7 @@
     /* 슬라이드 */
 
     .swiper {
+        position: relative;
         width: 100%;
         height: 100%;
     }
@@ -204,6 +205,26 @@
         display: flex;
         flex-direction: column;
         width: 66% !important;
+    }
+
+    .swiper-wrapper > .swiper-pagination-horizontal {
+        right: 550px;
+    }
+
+    .swiper-pagination > .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        border: 1px solid #F43B00;
+        opacity: 1;
+    }
+
+    .swiper-pagination > .swiper-pagination-bullet-active {
+        width: 50px;
+        transition: width 0.8s;
+        border-radius: 10px;
+        background: #F43B00;
+        border: 1px solid transparent;
     }
 
     .swiper-slide.slide2 {
@@ -308,12 +329,16 @@
         gap: 24px;
     }
 
-    .season__list > li > div {
-        max-width: 398px;
+    .season__list li {
+        width: 33.33%;
+    }
+
+    .signature__list li {
+        width: 33.33%;
     }
 
     .image-box {
-        width: 398px;
+        width: 100%;
         overflow: hidden;
     }
     
