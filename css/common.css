@@ -101,10 +101,11 @@ html {
 
 .font-size-header2 {
     font-size: 2rem;
+    line-height: 2.4rem;
 }
 
 .font-size-small {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .font-size-big {
@@ -304,20 +305,24 @@ input[type=checkbox] {
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px) {
     .font-size-body1 {
-        font-size: 1.6rem;
-        line-height: 2rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
     }
 
     .font-size-body2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .font-size-body3{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .font-size-header1 {
         font-size: 3.6rem;
+    }
+
+    .font-size-header2 {
+        font-size: 1.8rem;
     }
 
     .font-size-small {
@@ -350,7 +355,7 @@ input[type=checkbox] {
         justify-content: space-around;
         max-width: 820px;
         margin: 0 auto;
-        padding-top: 98px;
+        padding-top: 108px;
         padding-left: 0;
     }
 
@@ -370,7 +375,7 @@ input[type=checkbox] {
     }
 
 	.footer__level1 ul.sitemap__list > li {
-        padding: 10px 0;
+        padding: 8px 0;
     }
 
     .footer__level2 {
@@ -444,7 +449,11 @@ input[type=checkbox] {
         line-height: 44px;
         padding: 0 55px 0 10px;
     }
-    
+
+    .nav .menu__main .main__list:last-child > a {
+        padding-right: 0;
+    }
+
     .nav .menu__main .main__list .list__drop > li a {
         padding-right: 0;
     }
@@ -483,7 +492,7 @@ input[type=checkbox] {
     .nav .menu__main .main__list:hover .list__drop {
         max-height: 200px;
         display: block;
-        box-shadow: 2px 2px 2px rgb(27, 27, 27, 0.2);
+        box-shadow: 1px 1px 2px rgb(27, 27, 27, 0.1);
     }
 
     .nav .menu__main .list__drop a:hover {
