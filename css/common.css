@@ -92,7 +92,7 @@ html {
 }
 
 .font-size-body3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 
 .font-size-header1 {
@@ -147,132 +147,64 @@ html {
 }
 
 .nav__detail {
-    width: 100%;
-    height: 100%;
+    position: relative;
 }
 
 .nav__detail > h2 {
-    line-height: 50px;
+    width: 140px;
+    
 }
 
 .nav__detail > h2 img {
-    max-width: 116px;
+    max-width: 140px;
     display: block;
     
 }
 
+.menu .menu__main {
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.hidden {
+    display: none;
+}
+
 /* 모바일 메뉴버튼 */
-/* #menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
+.toggle {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
 }
 
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
+.toggle.on .one {
+    transform: rotate(45deg) translate(7px, 5px);
 }
 
-#menuToggle a:hover
-{
-  color: tomato;
+.toggle.on .two {
+    opacity: 0;
 }
 
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; 
-  z-index: 2;
-  
-  -webkit-touch-callout: none;
+.toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -4px);
 }
 
-
-#menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
+.one,
+.two,
+.three {
+    width: 100%;
+    height: 3px;
     background: #1B1B1B;
     border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition:
-        transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.55s ease;
+    margin: 5px auto;
+    backface-visibility: hidden;
+    transition-duration: 0.5s;
 }
-
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #F43B00;
-}
-
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-
-
-#menuToggle input:checked ~ ul {
-    transform: none;
-}
-
-.menu
-{
-  position: absolute;
-  width: 100%;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-} */
-
-
 
 
 
@@ -426,6 +358,9 @@ html {
 
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px) {
+    .hidden {
+        display: block;
+    }
 
     /* 메뉴 */
     .nav {
@@ -446,7 +381,7 @@ html {
         align-items: center;
     }
 
-    .nav__detail > .trigger {
+    .nav__detail > .toggle {
         display: none;
     }
 
@@ -467,6 +402,10 @@ html {
     .nav__detail > .menu {
         display: flex;
         justify-content: space-between;
+    }
+
+    .menu .menu__main {
+        margin-top: 0;
     }
     
     .nav .menu__main .main__list {

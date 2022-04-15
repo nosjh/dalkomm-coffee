@@ -28,11 +28,13 @@
             <h2>
                 <a href="./index.html"><img src="./img/main/dalkomm_sub.svg" alt="로고" class="logo"></a>
             </h2>
-            
-            <div class="trigger">
+            <div class="toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
             </div>
             <div class="menu">
-                <ul class="menu__main">
+                <ul class="menu__main hidden">
                     <li class="main__list">
                         <a href="#" class="font-SpoqaB font-size-body3 color-black">Dal.komm</a>
                         <ul class="list__drop">
@@ -98,11 +100,13 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="event__slide">
-                                <img class="event__image pc-only" src="./img/main/slide/event_01.png" alt="이벤트">
-                                <img class="event__image mobile-only" src="./img/main/slide/m_event_01.png" alt="이벤트">
-                                <h3 class="event__caption font-AggroM font-size-header2 color-black">나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택</h3>
-                            </div>
+                            <a href="#">
+                                <div class="event__slide">
+                                    <img class="event__image pc-only" src="./img/main/slide/event_01.png" alt="이벤트">
+                                    <img class="event__image mobile-only" src="./img/main/slide/m_event_01.png" alt="이벤트">
+                                    <h3 class="event__caption font-AggroM font-size-header2 color-black">나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택</h3>
+                                </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
                             <div class="event__slide">
@@ -281,6 +285,7 @@
             </div>
         </div>
     </footer>
+<script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/common.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
