@@ -212,19 +212,25 @@ html {
 }
 
 .main__list {
-    margin-top: 24px;
+    margin-top: 40px;
 }
 
 .main__list:last-child {
     margin-bottom: 60px;
 }
 
+.selected {
+    color: #F43B00;
+}
+
 .list__drop {
     margin-top: 26px;
+    display: none;
 }
 
 .list__drop li {
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .list__drop li:last-child {
