@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common_copy.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./library/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./library/animate.css-main/animate.min.css">
@@ -38,31 +38,31 @@
                     <li class="main__list" onclick="showHide(this)">
                         <a href="#" class="font-SpoqaB font-size-body3 color-black">Dal.komm</a>
                         <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">브랜드 이야기</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">App 소개</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">브랜드 이야기</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">App 소개</a></li>
                         </ul>
                     </li>
                     <li class="main__list" onclick="showHide(this)">
                         <a href="#" class="font-SpoqaB font-size-body3 color-black">메뉴·매장</a>
                         <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">메뉴</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">매장찾기</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">글로벌 달콤</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">메뉴</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">매장찾기</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">글로벌 달콤</a></li>
                         </ul>
                     </li>
                     <li class="main__list" onclick="showHide(this)">
                         <a href="#" class="font-SpoqaB font-size-body3 color-black">창업안내</a>
                         <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">가맹점 개설 안내</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">창업 상담 신청</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">가맹점 개설 안내</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">창업 상담 신청</a></li>
                         </ul>
                     </li>
                     <li class="main__list" onclick="showHide(this)">
                         <a href="#" class="font-SpoqaB font-size-body3 color-black color-black">새로운 소식</a>
                         <ul class="list__drop">
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">뉴스</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">공지사항</a></li>
-                            <li><a href="#" class="font-SpoqaR font-size-body1 color-black">달콤 스토리</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">뉴스</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">공지사항</a></li>
+                            <li><a href="#" class="font-SpoqaR font-size-body4 color-black">달콤 스토리</a></li>
                         </ul>
                     </li>
                     <li class="main__list" >
@@ -86,17 +86,17 @@
                 </p>
             </div>
             <div class="grid3"></div>
-            <div class="grid5">
+            <div class="grid5 tab-menu">
                 <ul class="wow animate__animated animate__fadeInUp delay1">
                     <li>
-                        <button class="event__btn font-AggroM font-size-body1 color-black" title="진행중 이벤트" aria-label="진행중 이벤트">진행중 이벤트</button>
+                        <button class="tab-a active-a event__btn font-AggroM font-size-body1 color-black" data-id="tab1" title="진행중 이벤트" aria-label="진행중 이벤트">진행중 이벤트</button>
                     </li>
                     <li>
-                        <button class="event__btn font-AggroM font-size-body1 color-black" title="종료된 이벤트" aria-label="종료된 이벤트">종료된 이벤트</button>
+                        <button class="tab-a event__btn font-AggroM font-size-body1 color-black" data-id="tab2" title="종료된 이벤트" aria-label="종료된 이벤트">종료된 이벤트</button>
                     </li>
                 </ul>
             </div>
-            <div class="grid4 slide">
+            <div class="grid4 slide tab tab-active" data-id="tab1">
                 <div class="swiper mySwiper wow animate__animated animate__fadeIn animate__delay-1s">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -131,6 +131,50 @@
                                 <div class="event__slide">
                                     <img class="event__image pc-only" src="./img/main/slide/event_04.png" alt="이벤트">
                                     <img class="event__image mobile-only" src="./img/main/slide/m_event_04.png" alt="이벤트">
+                                    <h3 class="event__caption font-AggroM font-size-header2 color-black">시그니처 텀블러 사용시 커피류 천원 즉시 할인!</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            
+            <div class="grid4 slide tab" data-id="tab2">
+                <div class="swiper mySwiper wow animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="event__slide">
+                                    <img class="event__image pc-only" src="./img/main/slide/event_01_end.png" alt="이벤트">
+                                    <img class="event__image mobile-only" src="./img/main/slide/m_event_01_end.png" alt="이벤트">
+                                    <h3 class="event__caption font-AggroM font-size-header2 color-black">나의 달콤 커피나무 앱 출석체크로 매일매일 열리는 혜택</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="event__slide">
+                                    <img class="event__image pc-only" src="./img/main/slide/event_02_end.png" alt="이벤트">
+                                    <img class="event__image mobile-only" src="./img/main/slide/m_event_02_end.png" alt="이벤트">
+                                    <h3 class="event__caption font-AggroM font-size-header2 color-black">Oh, JEJU 달콤한 제주 한모금</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="event__slide">
+                                    <img class="event__image pc-only" src="./img/main/slide/event_03_end.png" alt="이벤트">
+                                    <img class="event__image mobile-only" src="./img/main/slide/m_event_03_end.png" alt="이벤트">
+                                    <h3 class="event__caption font-AggroM font-size-header2 color-black">시그니처 텀블러 출시 건강한 지구를 위한 텀블러 습관</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="event__slide">
+                                    <img class="event__image pc-only" src="./img/main/slide/event_04_end.png" alt="이벤트">
+                                    <img class="event__image mobile-only" src="./img/main/slide/m_event_04_end.png" alt="이벤트">
                                     <h3 class="event__caption font-AggroM font-size-header2 color-black">시그니처 텀블러 사용시 커피류 천원 즉시 할인!</h3>
                                 </div>
                             </a>

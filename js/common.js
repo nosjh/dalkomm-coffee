@@ -20,6 +20,6 @@ const showHide = e => {
 
 // 모바일 메뉴 선택시 색상변경
 $('.main__list a').click(function(){
-    $('.main__list a').removeClass("selected");
-    $(this).addClass("selected");
+    $('.main__list a').removeClass("select");
+    $(this).addClass("select");
 });
