@@ -113,7 +113,7 @@ html {
 }
 
 .font-size-big {
-    font-size: 5.6rem;
+    font-size: 5rem;
     line-height: 6.4rem;
 }
 
@@ -177,8 +177,7 @@ html {
 
 .menu .menu__main {
     margin-top: 6px;
-    padding-top: 60px;
-    padding-left: 20px;
+    padding-top: 40px;
     width: 100%;
     height: 100%;
     background: white;
@@ -190,7 +189,7 @@ html {
     display: none;
 }
 
-/* 모바일 메뉴버튼 */
+/* 모바일 메뉴 토글 */
 .toggle {
     width: 30px;
     height: 20px;
@@ -224,8 +223,31 @@ html {
     transition-duration: 0.5s;
 }
 
+/* 모바일 하위메뉴 토글 */
+
+.main__list > span {
+    position: absolute;
+    font-size: 1.6rem;
+    padding-top: 4px;
+    right: 20px;
+}
+
+.rotate {
+    -moz-transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+/* --------------------- */
+
 .main__list {
     margin-top: 40px;
+    padding-left: 20px;
 }
 
 .main__list:first-child {
@@ -243,16 +265,18 @@ html {
 .list__drop {
     margin-top: 26px;
     display: none;
+    padding-left: 10px;
 }
 
 .list__drop li {
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .list__drop li:last-child {
     margin-bottom: 44px;
 }
+
 
 /* 푸터 */
 .footer {
@@ -331,7 +355,7 @@ html {
     }
 
     .font-size-header1 {
-        font-size: 3.6rem;
+        font-size: 3.2rem;
     }
 
     .font-size-header2 {
@@ -345,6 +369,15 @@ html {
     .font-size-big {
         font-size: 9.6rem;
         line-height: 11rem;
+    }
+
+    /* 메뉴 폰트 사이즈 변경 */
+    .main__list a {
+        font-size: 2.4rem;
+    }
+
+    .list__drop a {
+        font-size: 1.8rem;
     }
 
     /* 푸터 */
@@ -514,6 +547,15 @@ html {
         transition: 150ms;
     }
 
+    /* 메뉴 폰트 사이즈 변경 */
+    .main__list a {
+        font-size: 1.6rem;
+    }
+
+    .list__drop a {
+        font-size: 1.4rem;
+    }
+
     /* 모바일 메뉴 고침 */
     .menu {
         overflow: unset;
@@ -529,6 +571,8 @@ html {
 
     .main__list {
         margin-top: 0px;
+        padding-left: 0px;
+        display: unset;
     }
     
     .main__list:last-child {
@@ -537,14 +581,20 @@ html {
     
     .list__drop {
         margin-top: 0px;
+        padding-left: 0px;
     }
     
     .list__drop li {
         margin-bottom: 0px;
+        margin-left: 5px;
     }
     
     .list__drop li:last-child {
         margin-bottom: 0px;
+    }
+
+    .main__list span {
+        display: none;
     }
 
     /* 푸터 */
